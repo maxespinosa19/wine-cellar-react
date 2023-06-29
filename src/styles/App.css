@@ -1,0 +1,55 @@
+nav, .button-getdrink {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav > button , .button-getdrink > button{
+    padding: 10px;
+}
+
+h1, h2 , h3{
+    text-align: center;
+}
+.drink-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+.drink-list > div {
+    width: 100%;
+    margin: 5px;
+    
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .drink-list > div {
+        width: 40%;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .drink-list > div {
+        width: 23%;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .button-getdrink > div {
+        width: 16%
+    }
+}
+
+
+
+.drink-list > div >img {
+    width: 100%;
+    aspect-ratio: 4/6;
+    object-fit:contain;
+    margin: 0 auto;
+    display: block;
+}
